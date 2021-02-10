@@ -15,7 +15,9 @@ class user implements UserInterface {
     }
 
     public function parseRequest() {
-        return $this->request;
+        foreach ($this->request as $index => $value ) {
+            echo $index." = ".$value;
+        }
     }
 
 
